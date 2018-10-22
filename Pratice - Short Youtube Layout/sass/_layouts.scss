@@ -1,0 +1,32 @@
+.l-grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(8, [col-start] minmax(auto, 1fr));
+  max-width: 1520px;
+  margin: auto;
+}
+
+.l-main {
+  grid-column: col-start / span 5;
+  margin-top: 16px;
+}
+
+.l-aside {
+  grid-column: col-start 6 / span 8;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.l-aside-header {
+    display: flex;
+    align-items: center;
+}
+
+.l-watch-next {
+  display: flex;
+  justify-content: center;
+}
+
+.l-watch-next__item-2 {
+  margin-left: 8px;
+  min-width: 195px;
+}

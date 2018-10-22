@@ -1,0 +1,154 @@
+.l-navbar {
+  display: flex;
+
+  &__logo {
+    align-self: flex-start;
+    margin-right: auto;
+  }
+
+  &_bars {
+    align-self: flex-end;
+  }
+
+  &__menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 270px;
+  }
+}
+
+.l-navbar-desk {
+  display: none;
+
+  &__menu ul li {
+    display: inline-block;
+  }
+}
+
+.l-learn-more__item {
+  display: flex;
+}
+
+.l-footer__copyright {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  & p:nth-child(2) {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .l-navbar-desk {
+    display: flex;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-top: 0.8%;
+
+      & ul li {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .li__services {
+    position: relative;
+
+    & ul {
+      position: absolute;
+    }
+  }
+
+  .li__dropdown {
+    position: relative;
+
+    & ul {
+      position: absolute;
+    }
+  }
+
+  .menu__dropdown,
+  .menu__services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .l-carousel-itens-wrap {
+    display: flex;
+  }
+
+  .l-slides-wrap__prev {
+    position: absolute;
+    left: 0;
+    bottom: 44%;
+  }
+
+  .l-slides-wrap__next {
+    position: absolute;
+    right: 0;
+    bottom: 44%;
+  }
+}
+
+@media screen and (min-width: 1016px) {
+  .l-grid-50-50 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 13%;
+  }
+
+  .l-news {
+    grid-column-start: 1;
+  }
+
+  .l-testimonials {
+    grid-column-start: 2;
+  }
+
+  .l-learn-more {
+    display: flex;
+  }
+
+  .l-grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 5px;
+  }
+
+  .l-footer {
+
+    &__about {
+      grid-column: 1 / span 2;
+      max-width: 80%;
+
+    }
+    &__links {
+      grid-column-start: 3;
+    }
+    &__work {
+      grid-column-start: 4;
+    }
+    &__form-subscribe {
+      grid-column: 5 / span 6;
+    }
+  }
+
+  .l-footer__content {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

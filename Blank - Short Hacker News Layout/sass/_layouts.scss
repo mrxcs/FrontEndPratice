@@ -1,0 +1,35 @@
+.l-main-header {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.l-nav__items {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 1.0rem;
+
+  & li {
+    margin: 0 10px 0;
+  }
+}
+
+.l-list_item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.l-item__line-1 {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.l-item__line-2 {
+  margin: 0;
+  line-height: 0;
+  margin-left: 25px;
+}

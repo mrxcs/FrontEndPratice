@@ -1,0 +1,40 @@
+.list {
+  background-color: #f6f6f0;
+}
+
+$gray : #a0a0a0;
+
+.line-1 {
+
+  &__rank {
+    color: $gray;
+    margin-right: 5px;
+  }
+
+  &__fa {
+    color: $gray;
+  }
+
+  &__title {
+    margin-left: 5px;
+
+    & a {
+      font-weight: 500;
+    }
+  }
+
+  &__from {
+    color: $gray;
+  }
+}
+
+.line-2 {
+
+  &__meta {
+    color: $gray;
+
+    & a {
+      color: $gray;
+    }
+  }
+}

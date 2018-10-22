@@ -1,0 +1,43 @@
+.l-grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(8, [col-start] minmax(auto, 1fr));
+  grid-gap: 16px;
+  max-width: 1520px;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.l-featured {
+  grid-column: col-start / span 4;
+  grid-row: 1 /span 2;
+}
+
+.l-featured-mini {
+  grid-column: col-start 5 / span 8;
+
+  display: flex;
+}
+
+.l-featured-mix {
+  grid-column: col-start 5 / span 8;
+  grid-row: 2;
+
+  display: flex;
+
+  &__item-1 {
+    max-width: 50%;
+  }
+
+  &__item-2 {
+    max-width: 50%;
+  }
+}
+
+.l-wrap-news {
+  display: flex;
+  flex-direction: column;
+
+  &--margin {
+      margin: 0 8px 0;
+  }
+}

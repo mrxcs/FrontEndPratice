@@ -1,0 +1,61 @@
+.question {
+  border-top: 1px solid #e4e6e8;
+  padding: 16px 0 16px 0;
+
+  &:hover {
+    background-color: #fffbed;
+  }
+
+  &__meta {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #6b737b;
+  }
+}
+
+.meta_item {
+  width: 112px;
+  height: 97px;
+  font-weight: 500;
+}
+
+.item_number {
+  margin: 0;
+}
+
+.item_label {
+  margin: 0;
+}
+
+.summary__title {
+  color: #205b98;
+}
+
+.title__h2 {
+  margin: 0;
+}
+
+.sub__tags {
+  & p {
+    background-color: #e3ecf3;
+    color: #467bb4;
+    padding: 10px;
+  }
+}
+
+.sub__by {
+  color: #9299a0;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.by {
+  &__points {
+    font-weight: 700;
+  }
+
+  &__author {
+    color: #3278c6;
+    font-style: normal;
+  }
+}

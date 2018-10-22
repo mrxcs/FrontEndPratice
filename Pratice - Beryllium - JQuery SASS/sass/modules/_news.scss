@@ -1,0 +1,78 @@
+.news {
+  margin-bottom: 2rem;
+
+  &__header {
+    font-size: 30px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+  }
+
+  &__item {
+    border-bottom: 1px solid #f2f2f2;
+    margin: 0 0 20px;
+    list-style: none;
+    display: block;
+  }
+
+  &__btn {
+    background: #52D681;
+    color: #2f9051;
+    border: 2px solid #52D681;
+    padding: 10px 20px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 0;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-shadow: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+    & a {
+      color: #2f9051;
+    }
+
+    & a:hover {
+      color: white;
+    }
+  }
+}
+
+.item__date {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #b3b3b3;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.item__title {
+  margin-bottom: 15px;
+  font-weight: 100;
+  transition: 0.3s;
+  color: #52D681;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 20px;
+  font-size: 24px;
+  display: block;
+
+  &:hover {
+    color: #23527c;
+  }
+}
+
+.item__text {
+  color: gray;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}

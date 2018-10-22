@@ -1,0 +1,28 @@
+// Main App SCSS File
+// Centralize your imports here
+
+// Config
+@import "config/mixins";
+@import "config/variables";
+
+// Base
+@import "base";
+
+// Layout
+@import "layouts";
+
+// States
+@import "states";
+
+// Modules
+@import "modules/carousel-side";
+@import "modules/carousel";
+@import "modules/article-work";
+@import "modules/news";
+@import "modules/testimonials";
+@import "modules/learn-more";
+@import "modules/footer";
+@import "modules/navbar";
+
+// Theme
+@import "theme";

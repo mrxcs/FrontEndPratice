@@ -1,0 +1,48 @@
+.carousel {
+  margin-bottom: 7rem;
+}
+
+.item__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.item__caption {
+  color: #000;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.item__sub-caption {
+  color: #bfbfbf;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.carousel__dot {
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  border-radius: 100%;
+  display: inline-block;
+  background: #cccccc;
+  cursor: pointer;
+
+  &--active {
+    background: #4d4d4d;
+  }
+}
+
+@media screen and (min-width: 576px) {
+
+  .carousel {
+
+    &__item {
+      margin: 0 15px 0 15px;
+      max-width: 50%;
+    }
+  }
+}

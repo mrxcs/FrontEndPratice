@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="sass/main.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+  <title>Honest</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="l-navbar navbar">
+      <div class="l-navbar__logo navbar__logo">BERYLLIUM</div>
+      <div class="l-navbar__bars navbar__bars fa fa-bars" onclick=openCloseMenu()></div>
+      <div class="l-navbar__menu navbar__menu is-menu-close" id="navbar__menu">
+        <i class="l-menu__close menu__close fa fa-times" onclick=openCloseMenu()></i>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li onmouseenter="showUl(this)" onmouseleave="hideUl(this)"><a href="#">Services</a><i class="fa fa-chevron-circle-down fa--dropdown"></i>
+            <ul class="l-Services__dropdown Services__dropdown is-hidden">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">eCommerce</a></li>
+              <li><a href="#">Branding</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="showUl(this)" onmouseleave="hideUl(this)"><a href="#">Dropdown</a><i class="fa fa-chevron-circle-down fa--dropdown"></i>
+            <ul class="l-Dropdown__dropdown Dropdown__dropdown is-hidden">
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">Sass</a></li>
+              <li><a href="#">jQuery</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="l-navbar-desk navbar-desk">
+      <div class="l-navbar-desk__logo navbar-desk__logo">BERYLLIUM</div>
+      <div class="l-navbar-desk__menu navbar-desk__menu">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li onmouseenter="showUl(this)" onmouseleave="hideUl(this)" class="li__services"><a href="#">Services</a><i class="fa fa-chevron-circle-down fa--dropdown"></i>
+            <ul class="l-Services__dropdown--desk Services__dropdown--desk menu__services is-hidden">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">eCommerce</a></li>
+              <li><a href="#">Branding</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="showUl(this)" onmouseleave="hideUl(this)" class="li__dropdown"><a href="#">Dropdown</a><i class="fa fa-chevron-circle-down fa--dropdown"></i>
+            <ul class="l-Dropdown__dropdown--desk Dropdown__dropdown--desk menu__dropdown is-hidden">
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">Sass</a></li>
+              <li><a href="#">jQuery</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="slides-wrap">
+
+      <div class="slides-wrap__slide fade">
+        <a href="#"><img class="slide__img" src="img/slider_1.jpg" /></a>
+        <div class="slide__caption">Architecture #1</div>
+      </div>
+
+      <div class="slides-wrap__slide slides-wrap__slide--fade">
+        <a href="#"><img class="slide__img" src="img/slider_2.jpg" /></a>
+        <div class="slide__caption">Architecture #1</div>
+      </div>
+
+      <div class="slides-wrap__slide slides-wrap__slide--fade">
+        <a href="#"><img class="slide__img" src="img/slider_3.jpg" /></a>
+        <div class="slide__caption">Architecture #1</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="slides-wrap__prev l-slides-wrap__prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="slides-wrap__next l-slides-wrap__next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- The dots/circles -->
+      <div class="slides-wrap__dots">
+        <span class="dots__dot dots__dot--active" onclick="currentSlide(1)"></span>
+        <span class="dots__dot" onclick="currentSlide(2)"></span>
+        <span class="dots__dot" onclick="currentSlide(3)"></span>
+      </div>
+
+    </div>
+
+    <article class="article-work">
+      <h2 class="article-work__title">Work</h2>
+      <p class="article-work__text">Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.</p>
+    </article>
+
+    <div id="carousel" class="carousel l-carousel">
+
+      <div class="l-carousel-itens-wrap">
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_1.jpg" />
+        <div class="item__caption">New York Arena</div></a>
+          <div class="item__sub-caption">New York</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_2.jpg" />
+        <div class="item__caption">Eagle Park</div></a>
+          <div class="item__sub-caption">London</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_3.jpg" />
+        <div class="item__caption">National Park</div></a>
+          <div class="item__sub-caption">Paris, France</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_1.jpg" />
+        <div class="item__caption">New York Arena</div></a>
+          <div class="item__sub-caption">New York</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_2.jpg" />
+        <div class="item__caption">Eagle Park</div></a>
+          <div class="item__sub-caption">London</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_3.jpg" />
+        <div class="item__caption">National Park</div></a>
+          <div class="item__sub-caption">Paris, France</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_1.jpg" />
+        <div class="item__caption">New York Arena</div></a>
+          <div class="item__sub-caption">New York</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_2.jpg" />
+        <div class="item__caption">Eagle Park</div></a>
+          <div class="item__sub-caption">London</div>
+        </div>
+
+        <div class="carousel__item">
+          <a href="#"><img class="item__img" src="img/slider_3.jpg" />
+        <div class="item__caption">National Park</div></a>
+          <div class="item__sub-caption">Paris, France</div>
+        </div>
+
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="carousel__prev is-hidden" onclick="plusImg(-1)">&#10094;</a>
+      <a class="carousel__next is-hidden" onclick="plusImg(1)">&#10095;</a>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="carousel__dot" onclick="currentImg(1)"></span>
+        <span class="carousel__dot" onclick="currentImg(2)"></span>
+        <span class="carousel__dot" onclick="currentImg(3)"></span>
+        <span class="carousel__dot" onclick="currentImg(4)"></span>
+        <span class="carousel__dot" onclick="currentImg(5)"></span>
+        <span class="carousel__dot" onclick="currentImg(6)"></span>
+        <span class="carousel__dot" onclick="currentImg(7)"></span>
+        <span class="carousel__dot" onclick="currentImg(8)"></span>
+        <span class="carousel__dot" onclick="currentImg(9)"></span>
+      </div>
+
+    </div>
+
+    <div class="l-grid-50-50">
+
+      <div class="news l-news">
+
+        <h2 class="news__header">News</h2>
+
+        <article class="news__item">
+          <a href="#">
+            <div class="item__date">SEPTEMBER 10, 2016</div>
+            <h3 class="item__title">Manila Bridge Re-construction</h3>
+            <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
+          </a>
+        </article>
+
+        <article class="news__item">
+          <a href="#">
+            <div class="item__date">SEPTEMBER 10, 2016</div>
+            <h3 class="item__title">Manila Bridge Re-construction</h3>
+            <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
+          </a>
+        </article>
+
+        <article class="news__item">
+          <a href="#">
+            <div class="item__date">SEPTEMBER 10, 2016</div>
+            <h3 class="item__title">Manila Bridge Re-construction</h3>
+            <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
+          </a>
+        </article>
+
+        <a href="#"><button type="button" class="news__btn"><a href="#">MORE NEWS</a></button>
+      </div>
+
+      <div class="testimonials l-testimonials">
+
+        <h2 class="testimonials__header">Testimonials</h2>
+
+        <blockquote class="testimonials__blq">
+          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.“</p>
+          <p class="author"><cite>— John Doe Dueller</cite></p>
+        </blockquote>
+
+        <blockquote class="testimonials__blq">
+          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.“</p>
+          <p><cite>— John Doe Dueller</cite></p>
+        </blockquote>
+
+      </div>
+
+    </div>
+
+    <div class="learn-more l-learn-more">
+
+      <div class="l-learn-more__item">
+        <i class="fa fa-file-archive learn-more__fa"></i>
+        <div class="learn-more__item">
+          <h3>ARCHITECT</h3>
+          <p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
+          <p><a href="#">LEARN MORE</a></p>
+        </div>
+      </div>
+
+      <div class="l-learn-more__item">
+        <i class="fa fa-screwdriver learn-more__fa"></i>
+        <div class="learn-more__item">
+          <h3>PLANNING</h3>
+          <p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
+          <p><a href="#">LEARN MORE</a></p>
+        </div>
+      </div>
+
+      <div class="l-learn-more__item">
+        <i class="fa fa-plug learn-more__fa"></i>
+        <div class="learn-more__item">
+          <h3>PARKS & EVENTS</h3>
+          <p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
+          <p><a href="#">LEARN MORE</a></p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer--padding l-grid-6 l-footer__content">
+
+      <div class="footer__about l-footer__about">
+        <h3 class="about__header footer-item--header">Beryllium</h3>
+        <p class="about__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod.</p>
+      </div>
+
+      <div class="footer__links l-footer__links">
+        <h3 class="links__header footer-item--header">Links</h3>
+        <ul class="links__body footer-item--ul">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRODUCTS</a></li>
+          <li><a href="#">TESTIMONIAL</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__work l-footer__work">
+        <h3 class="work__header footer-item--header">Work</h3>
+        <ul class="work__body footer-item--ul">
+          <li><a href="#">NEW YORK ARENA</a></li>
+          <li><a href="#">EAGLE PARK</a></li>
+          <li><a href="#">NATIONALS PARK</a></li>
+          <li><a href="#">TESTIMONIAL</a></li>
+          <li><a href="#">MANILA PARK</a></li>
+        </ul>
+      </div>
+
+      <form class="footer__form-subscribe l-footer__form-subscribe">
+        <input type="email" class="form-subscribe__email" placeholder="Enter your email">
+        <input type="submit" value="Send" class="form-subscribe__btn">
+      </form>
+
+    </div>
+
+    <div class="footer__copyright l-footer__copyright">
+      <p>© 2016 Free HTML5. All Rights Reserved.</p>
+      <p>Designed by <i>FreeHTML5.co</i> Demo Images: <i>Pixeden</i> & <i>Unsplash</i> - <i>reMade</i> by <i>Marcelo R.</i></p>
+    </div>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/states.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/slides.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+// Main App SCSS File
+// Centralize your imports here
+
+// Config
+@import "config/mixins";
+@import "config/variables";
+
+// Base
+@import "base";
+
+// Layout
+@import "layouts";
+
+// States
+@import "states";
+
+// Modules
+@import "modules/video-wrap-16-9";
+@import "modules/aside-header";
+@import "modules/watch-next";

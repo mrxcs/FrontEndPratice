@@ -1,0 +1,113 @@
+.footer {
+  background: #262626;
+  padding: 7em 0 0;
+  margin-bottom: 0;
+  width: 100%;
+
+  &--padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 35px;
+  }
+
+  & p {
+    margin: 0 0 10px;
+  }
+
+  &__copyright {
+    color: rgb(119, 119, 119);
+    font-family: Montserrat, sans-serif;
+    font-size: 11.9px;
+    font-weight: 400;
+    height: auto;
+    line-height: 20.23px;
+    text-size-adjust: 100%;
+    width: auto;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    padding: 35px 5px 25px;
+
+    & i {
+      color: #42a264;
+    }
+  }
+}
+
+.footer-item--header {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.footer-item--ul {
+  padding: 0;
+
+  & li a {
+    text-transform: uppercase;
+    font-size: 13px !important;
+    font-family: "Montserrat", sans-serif;
+    color: #52D681;
+    transition: 0.5s;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+}
+
+.about {
+  &__body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #777;
+  }
+}
+
+.form-subscribe {
+  &__email {
+    background: #fff;
+    border: none;
+    height: 54px;
+    font-size: 18px;
+    font-weight: 300;
+    box-shadow: none;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 1.42857;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+
+  &__btn {
+    margin-top: 4px;
+    border-radius: 4px;
+    height: 54px !important;
+    line-height: 1.5;
+    padding: 10px 10px !important;
+    cursor: pointer;
+    background: #52D681;
+    color: #fff;
+    border: 2px solid #52D681 !important;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-shadow: none !important;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background-color: #67db90;
+    }
+  }
+}

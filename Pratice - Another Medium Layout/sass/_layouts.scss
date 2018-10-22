@@ -1,0 +1,48 @@
+.l-grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, [col-start] minmax(auto, 1fr));
+  grid-gap: 30px;
+  max-width: 1520px;
+  margin: auto;
+
+  &__item-01 {
+    grid-row: span 2;
+  }
+
+  &__item-02 {
+    grid-column-start: 2;
+  }
+
+  &__item-03 {
+    grid-column-start: 3;
+  }
+
+  &__item-04 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  &__item-05 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+
+
+}
+
+.l-news-block {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  &__meta {
+    display: flex;
+
+    margin-top: auto;
+  }
+}
+
+.l-meta__icons {
+  margin-left: auto;
+}

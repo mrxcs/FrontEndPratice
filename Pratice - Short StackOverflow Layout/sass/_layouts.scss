@@ -1,0 +1,43 @@
+.l-grid-wrap {
+  display: grid;
+  grid-template-columns: 1 auto;
+  grid-gap: 0;
+  max-width: 1520px;
+  margin: auto;
+  padding: 18px;
+}
+
+.l-question {
+  display: grid;
+  grid-template-columns: repeat(8, [col-start] minmax(auto, 1fr));
+  grid-gap: 0;
+
+  &__meta {
+    grid-column: col-start 1 / span 2;
+    display: flex;
+  }
+
+  &__summary {
+    grid-column: col-start 3 / span 8;
+  }
+}
+
+.l-meta__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-summary__sub {
+  display: flex;
+}
+
+.sub__tags {
+  margin-right: auto;
+  display: flex;
+
+  & p {
+    margin-right: 15px;
+  }
+}
